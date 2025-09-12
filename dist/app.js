@@ -1,0 +1,22 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.app = void 0;
+require("reflect-metadata");
+require("./core/utils/container");
+const fastify_1 = __importDefault(require("fastify"));
+const student_routes_1 = require("./api/rest-api/student.routes");
+const classes_routes_1 = require("./api/rest-api/classes.routes");
+const globalErrorHandler_1 = __importDefault(require("./globalError/globalErrorHandler"));
+const teacher_routes_1 = require("./api/rest-api/teacher.routes");
+const address_routes_1 = require("./api/rest-api/address.routes");
+const redis_1 = __importDefault(require("./config/redis/redis"));
+exports.app = (0, fastify_1.default)({ logger: true });
+redis_1.default.set("test key", "Hello Redis").then(() => console.log("Redis test key set"));
+exports.app.register(address_routes_1.addressRoutes, { prefix: "/api/v1/address" });
+exports.app.register(student_routes_1.studentRoutes, { prefix: "/api/v1/students" });
+exports.app.register(teacher_routes_1.teacherRoutes, { prefix: "/api/v1/teacher" });
+exports.app.register(classes_routes_1.classsRoutes, { prefix: "/api/v1/classes" });
+exports.app.setErrorHandler(globalErrorHandler_1.default);
