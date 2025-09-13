@@ -3,29 +3,32 @@
 A production-ready School Management System built with Fastify, TypeScript, SOLID Principles, and OOP.
 This project provides a robust backend for managing Students, Teachers, Classes, and Addresses, designed for scalability and maintainability with Docker, Redis, Nginx, and Drizzle ORM.
 
-## 🚀 Features
+## 🚀 Features  
 
-👩‍🏫 Teacher Management – Create, update, fetch, and delete teacher details
-👨‍🎓 Student Management – Handle student records with validation and persistence
-🏠 Address Management – Associate and manage addresses
-🏢 Class Management – Manage school classes efficiently
-⚡ Fastify with TypeScript – High-performance and type-safe APIs
-📐 SOLID & OOP – Clean, maintainable, and testable architecture
-🐳 Dockerized – Easy containerized deployment
-⚡ Redis – Caching layer for performance optimization
-🌐 Nginx – Reverse proxy & load balancing
-🗄️ Drizzle ORM – Type-safe SQL with migration support
+👩‍🏫 Teacher Management – Create, update, fetch, and delete teacher details  
+👨‍🎓 Student Management – Handle student records with validation and persistence  
+🏠 Address Management – Associate and manage addresses  
+🏢 Class Management – Manage school classes efficiently  
+⚡ Fastify with TypeScript – High-performance and type-safe APIs  
+📐 SOLID & OOP – Clean, maintainable, and testable architecture  
+🐳 Dockerized – Easy containerized deployment  
+⚡ Redis – Caching layer for performance optimization  
+🌐 Nginx – Reverse proxy & load balancing  
+🗄️ Drizzle ORM – Type-safe SQL with migration support  
 
-## 🛠️ Tech Stack
+---
 
-Backend Framework: Fastify
-Language: TypeScript
-Architecture: SOLID Principles + OOP
-Database: PostgreSQL (via Drizzle ORM)
-Caching: Redis
-Reverse Proxy: Nginx
-Containerization: Docker & Docker Compose
-Validation: Fastify Schema-based validation  
+## 🛠️ Tech Stack  
+
+🖥️ **Backend Framework**: Fastify  
+📘 **Language**: TypeScript  
+📐 **Architecture**: SOLID Principles + OOP  
+🗄️ **Database**: PostgreSQL (via Drizzle ORM)  
+⚡ **Caching**: Redis  
+🌐 **Reverse Proxy**: Nginx  
+🐳 **Containerization**: Docker & Docker Compose  
+✅ **Validation**: Fastify Schema-based validation  
+ 
 
 ## 📌 API Endpoints
 ### Address Routes (/api/v1/address)
