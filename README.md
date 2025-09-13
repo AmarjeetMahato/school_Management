@@ -1,4 +1,4 @@
-                                                                                               # 🏫 School Management System
+# 🏫 School Management System
 
 A production-ready School Management System built with Fastify, TypeScript, SOLID Principles, and OOP.
 This project provides a robust backend for managing Students, Teachers, Classes, and Addresses, designed for scalability and maintainability with Docker, Redis, Nginx, and Drizzle ORM.
@@ -29,11 +29,11 @@ Validation: Fastify Schema-based validation
 
 ## 📌 API Endpoints
 ### Address Routes (/api/v1/address)
-POST /create → Create new address
-GET /get-all-address → Fetch all addresses
-PATCH /:id/update → Update an address
-GET /:id/get-address → Get single address by ID
-DELETE /:id/delete → Delete address
+- `POST   /create` → Create new address  
+- `GET    /get-all-address` → Fetch all addresses  
+- `PATCH  /:id/update` → Update an address  
+- `GET    /:id/get-address` → Get single address by ID  
+- `DELETE /:id/delete` → Delete address  
 
 ### Class Routes (/api/v1/classes)
 POST /create → Create new class
