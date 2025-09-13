@@ -36,25 +36,26 @@ Validation: Fastify Schema-based validation
 - `DELETE /:id/delete` → Delete address  
 
 ### Class Routes (/api/v1/classes)
-POST /create → Create new class
-GET /get-all-classes → Fetch all classes
-PATCH /:id/update → Update class details
-GET /:id/get-class → Get single class by ID
-DELETE /:id/delete → Delete class
+- `POST   /create` → Create new class  
+- `GET    /get-all-classes` → Fetch all classes  
+- `PATCH  /:id/update` → Update class details  
+- `GET    /:id/get-class` → Get single class by ID  
+- `DELETE /:id/delete` → Delete class  
 
 ### Student Routes (/api/v1/students)
-POST /create → Create new student
-GET /get-all-students → Fetch all students
-PATCH /:id/update → Update student details
-GET /:id/get-student → Get single student by ID
-DELETE /:id/delete → Delete student
+- `POST   /create` → Create new student  
+- `GET    /get-all-students` → Fetch all students  
+- `PATCH  /:id/update` → Update student details  
+- `GET    /:id/get-student` → Get single student by ID  
+- `DELETE /:id/delete` → Delete student  
 
 ### Teacher Routes (/api/v1/teacher)
-POST /create → Create new teacher
-GET /get-all-teacher → Fetch all teachers
-PATCH /:id/update → Update teacher details
-GET /:id/get-teacher → Get single teacher by ID
-DELETE /:id/delete → Delete teacher
+- `POST   /create` → Create new teacher  
+- `GET    /get-all-teacher` → Fetch all teachers  
+- `PATCH  /:id/update` → Update teacher details  
+- `GET    /:id/get-teacher` → Get single teacher by ID  
+- `DELETE /:id/delete` → Delete teacher  
+
 
 ## ⚙️ Installation & Setup
 
